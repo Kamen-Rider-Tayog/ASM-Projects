@@ -1,0 +1,17 @@
+# VS Code files
+.vscode/
+*.code-workspace
+
+# Temporary files
+*.obj
+*.lst
+*.map
+*.crf
+
+# DOSBox files
+dosbox.conf
+*.conf
+
+# OS junk files
+.DS_Store
+Thumbs.db
