@@ -109,6 +109,71 @@ START:
 
 
 
+    ;LETTER 'z' BASE 
+    draw_rectangle 160, 30, 0, 45, 30
+
+    ;left details
+    draw_rectangle 160, 40, 15, 20, 5
+    draw_rectangle 165, 40, 15, 5, 10
+    draw_rectangle 165, 45, 15, 5, 5
+
+    ;right details
+    draw_rectangle 185, 40, 15, 20, 5
+    draw_rectangle 175, 55, 15, 5, 10
+    draw_rectangle 180, 50, 15, 5, 5
+
+    ;bottom detail
+    draw_rectangle 165, 70, 15, 5, 20
+
+
+
+    ;LETTER 'o' BASE
+    draw_rectangle 195, 30, 0, 45, 35
+    
+    ;carve center hole for 'o'
+    draw_rectangle 205, 40, 15, 25, 15
+
+    ;inner hole corner
+    draw_rectangle 205, 40, 0, 5, 5
+    draw_rectangle 215, 40, 0, 5, 5
+    draw_rectangle 205, 60, 0, 5, 5
+    draw_rectangle 215, 60, 0, 5, 5
+    
+    ;top left detail
+    draw_rectangle 195, 30, 15, 5, 10
+    draw_rectangle 195, 35, 15, 5, 5
+
+    ;top right detail
+    draw_rectangle 220, 30, 15, 5, 10
+    draw_rectangle 225, 35, 15, 5, 5
+
+    ;bottom left detail
+    draw_rectangle 195, 70, 15, 5, 10
+    draw_rectangle 195, 65, 15, 5, 5
+
+    ;bottom right detail
+    draw_rectangle 220, 70, 15, 5, 10
+    draw_rectangle 225, 65, 15, 5, 5
+
+    
+    
+    ;LETTER 'n' BASE 
+    draw_rectangle 235, 30, 0, 45, 30
+
+    ;top details
+    draw_rectangle 245, 30, 15, 5, 5
+    draw_rectangle 260, 30, 15, 5, 5
+
+    ;middle details
+    draw_rectangle 245, 40, 15, 35, 10
+    draw_rectangle 245, 40, 0, 5, 5
+
+
+
+
+    
+
+
     ; Wait for key press
     XOR AH, AH
     INT 16h
