@@ -147,83 +147,83 @@ START:
 
 
 
-    ;CLYDE BASE
-    draw_rectangle 15, 110, 42, 70, 70
+        ;CLYDE BASE
+    draw_rectangle 65, 110, 42, 70, 70
 
     ;top left
-    draw_rectangle 15, 110, 0, 30, 5
-    draw_rectangle 20, 110, 0, 15, 5
-    draw_rectangle 25, 110, 0, 10, 5
-    draw_rectangle 30, 110, 0, 5, 10
+    draw_rectangle 65, 110, 0, 30, 5
+    draw_rectangle 70, 110, 0, 15, 5
+    draw_rectangle 75, 110, 0, 10, 5
+    draw_rectangle 80, 110, 0, 5, 10
 
     ;top right
-    draw_rectangle 80, 110, 0, 30, 5
-    draw_rectangle 75, 110, 0, 15, 5
-    draw_rectangle 70, 110, 0, 10, 5
-    draw_rectangle 60, 110, 0, 5, 10
+    draw_rectangle 130, 110, 0, 30, 5
+    draw_rectangle 125, 110, 0, 15, 5
+    draw_rectangle 120, 110, 0, 10, 5
+    draw_rectangle 110, 110, 0, 5, 10
 
     ;bottom left
-    draw_rectangle 20, 175, 0, 5, 15
-    draw_rectangle 25, 170, 0, 5, 5
+    draw_rectangle 70, 175, 0, 5, 15
+    draw_rectangle 75, 170, 0, 5, 5
 
     ;bottom middle
-    draw_rectangle 45, 170, 0, 10, 10
+    draw_rectangle 95, 170, 0, 10, 10
 
     ;bottom right
-    draw_rectangle 65, 175, 0, 5, 15
-    draw_rectangle 70, 170, 0, 5, 5
+    draw_rectangle 115, 175, 0, 5, 15
+    draw_rectangle 120, 170, 0, 5, 5
 
     ;left eye
-    draw_rectangle 20, 130, 15, 15, 20
-    draw_rectangle 25, 125, 15, 25, 10
+    draw_rectangle 70, 130, 15, 15, 20
+    draw_rectangle 75, 125, 15, 25, 10
 
     ;right eye
-    draw_rectangle 50, 130, 15, 15, 20
-    draw_rectangle 55, 125, 15, 25, 10
+    draw_rectangle 100, 130, 15, 15, 20
+    draw_rectangle 105, 125, 15, 25, 10
 
     ;pupils
-    draw_rectangle 20, 135, 32, 10, 10
-    draw_rectangle 50, 135, 32, 10, 10
+    draw_rectangle 70, 135, 32, 10, 10
+    draw_rectangle 100, 135, 32, 10, 10
 
 
 
     ;PINKY BASE
-    draw_rectangle 105, 110, 13, 70, 70
+    draw_rectangle 155, 110, 13, 70, 70
 
     ;top left
-    draw_rectangle 105, 110, 0, 30, 5
-    draw_rectangle 110, 110, 0, 15, 5
-    draw_rectangle 115, 110, 0, 10, 5
-    draw_rectangle 120, 110, 0, 5, 10
+    draw_rectangle 155, 110, 0, 30, 5
+    draw_rectangle 160, 110, 0, 15, 5
+    draw_rectangle 165, 110, 0, 10, 5
+    draw_rectangle 170, 110, 0, 5, 10
 
     ;top right
-    draw_rectangle 170, 110, 0, 30, 5
-    draw_rectangle 165, 110, 0, 15, 5
-    draw_rectangle 160, 110, 0, 10, 5
-    draw_rectangle 150, 110, 0, 5, 10
+    draw_rectangle 220, 110, 0, 30, 5
+    draw_rectangle 215, 110, 0, 15, 5
+    draw_rectangle 210, 110, 0, 10, 5
+    draw_rectangle 200, 110, 0, 5, 10
 
     ;bottom left
-    draw_rectangle 110, 175, 0, 5, 15
-    draw_rectangle 115, 170, 0, 5, 5
+    draw_rectangle 160, 175, 0, 5, 15
+    draw_rectangle 165, 170, 0, 5, 5
 
     ;bottom middle
-    draw_rectangle 135, 170, 0, 10, 10
+    draw_rectangle 185, 170, 0, 10, 10
 
     ;bottom right
-    draw_rectangle 155, 175, 0, 5, 15
-    draw_rectangle 160, 170, 0, 5, 5
+    draw_rectangle 205, 175, 0, 5, 15
+    draw_rectangle 210, 170, 0, 5, 5
 
     ;left eye
-    draw_rectangle 110, 130, 15, 15, 20
-    draw_rectangle 115, 125, 15, 25, 10
+    draw_rectangle 160, 130, 15, 15, 20
+    draw_rectangle 165, 125, 15, 25, 10
 
     ;right eye
-    draw_rectangle 140, 130, 15, 15, 20
-    draw_rectangle 145, 125, 15, 25, 10
+    draw_rectangle 190, 130, 15, 15, 20
+    draw_rectangle 195, 125, 15, 25, 10
 
     ;pupils
-    draw_rectangle 110, 135, 32, 10, 10
-    draw_rectangle 140, 135, 32, 10, 10
+    draw_rectangle 160, 135, 32, 10, 10
+    draw_rectangle 190, 135, 32, 10, 10
 
     ; Wait for key press
     XOR AH, AH
