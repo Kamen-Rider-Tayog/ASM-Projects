@@ -2,19 +2,20 @@
 .stack 100h
 
 .data
-    firstname   db "Bantayog Maharaj$"
-    middlename  db "Eucare$"
-    lastname    db "Basallo$"
-    studentno   db "202404798$"
-    course      db "BSCS 2-3$"
+    char1 db '?$'
+    char2 db '!$'
+    char3 db '?$'
+    char4 db '<$'
+    char5 db '>$'
+    char6 db '@$'
 
 .code
 main proc
     mov ax, @data
     mov ds, ax
 
-    ;Display firstname
-    mov dx, offset firstname
+    ;Display ?-tayog
+    mov dx, offset char1
     mov ah, 9
     int 21h
 
@@ -26,34 +27,8 @@ main proc
     mov ah, 2
     int 21h
 
-    ;Display middlename-tayog
-    mov dx, offset middlename
-    mov ah, 9
-    int 21h
-
-    ;New line
-    mov dl, 10
-    mov ah, 2
-    int 21h
-    mov dl, 13
-    mov ah, 2
-    int 21h
-
-    ;Display lastname-tayog
-    mov dx, offset lastname
-    mov ah, 9
-    int 21h
-
-    ;New line
-    mov dl, 10
-    mov ah, 2
-    int 21h
-    mov dl, 13
-    mov ah, 2
-    int 21h
-
-    ;Display studentno-tayog
-    mov dx, offset studentno
+    ;Display !
+    mov dx, offset char2
     mov ah, 9
     int 21h
 
@@ -65,8 +40,47 @@ main proc
     mov ah, 2
     int 21h
 
-    ;Display course
-    mov dx, offset course
+    ;Display ?
+    mov dx, offset char3
+    mov ah, 9
+    int 21h
+
+    ;New line
+    mov dl, 10
+    mov ah, 2
+    int 21h
+    mov dl, 13
+    mov ah, 2
+    int 21h
+
+    ;Display <-tayog
+    mov dx, offset char4
+    mov ah, 9
+    int 21h
+
+    ;New line
+    mov dl, 10
+    mov ah, 2
+    int 21h
+    mov dl, 13
+    mov ah, 2
+    int 21h
+
+    ;Display >-tayog
+    mov dx, offset char5
+    mov ah, 9
+    int 21h
+
+    ;New line
+    mov dl, 10
+    mov ah, 2
+    int 21h
+    mov dl, 13
+    mov ah, 2
+    int 21h
+
+    ;Display @
+    mov dx, offset char6
     mov ah, 9
     int 21h
 

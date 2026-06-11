@@ -1,11 +1,9 @@
 .MODEL SMALL
 .STACK 100h
 
-; ============================================================
 ; REUSABLE MACRO: draw_rectangle
-; ============================================================
 ; Usage: draw_rectangle x_start, y_start, color, height, width
-; ============================================================
+
 draw_rectangle MACRO x, y, color, height, width
     LOCAL row_loop, col_loop
     MOV CX, x
@@ -32,7 +30,7 @@ START:
     MOV AX, 13h
     INT 10h
     
-    ; ===== WHITE BACKGROUND =====
+    ;BLACK BACKGROUND
     draw_rectangle 0, 0, 0, 200, 320
     
 

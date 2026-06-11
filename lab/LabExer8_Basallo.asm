@@ -2,19 +2,19 @@
 .stack 100h
 
 .data
-    firstname   db "Bantayog Maharaj$"
-    middlename  db "Eucare$"
-    lastname    db "Basallo$"
-    studentno   db "202404798$"
-    course      db "BSCS 2-3$"
+    line1   db "==============================================$"
+    hello   db "             HELLO!$"
+    thisis  db "THIS              IS$"
+    lab     db "                  LABORATORY 8$"
+    line2   db "===============================================$"
 
 .code
 main proc
     mov ax, @data
     mov ds, ax
 
-    ;Display firstname
-    mov dx, offset firstname
+    ;Display top border
+    mov dx, offset line1
     mov ah, 9
     int 21h
 
@@ -26,12 +26,11 @@ main proc
     mov ah, 2
     int 21h
 
-    ;Display middlename-tayog
-    mov dx, offset middlename
+    ;Display HELLO!-tayog
+    mov dx, offset hello
     mov ah, 9
     int 21h
 
-    ;New line
     mov dl, 10
     mov ah, 2
     int 21h
@@ -39,12 +38,11 @@ main proc
     mov ah, 2
     int 21h
 
-    ;Display lastname-tayog
-    mov dx, offset lastname
+    ;Display THIS and IS-tayog
+    mov dx, offset thisis
     mov ah, 9
     int 21h
 
-    ;New line
     mov dl, 10
     mov ah, 2
     int 21h
@@ -52,12 +50,11 @@ main proc
     mov ah, 2
     int 21h
 
-    ;Display studentno-tayog
-    mov dx, offset studentno
+    ;Display LABORATORY 8
+    mov dx, offset lab
     mov ah, 9
     int 21h
 
-    ;New line-tayog
     mov dl, 10
     mov ah, 2
     int 21h
@@ -65,12 +62,11 @@ main proc
     mov ah, 2
     int 21h
 
-    ;Display course
-    mov dx, offset course
+    ;Display bottom border-tayog
+    mov dx, offset line2
     mov ah, 9
     int 21h
 
-    ;-tayog
     mov ah, 4ch
     int 21h
 main endp
